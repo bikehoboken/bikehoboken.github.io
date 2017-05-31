@@ -119,7 +119,17 @@
         </style>
     </head>
     <body>
-        <article>
+
+        <div id="draft_indicator" style="    font-family: 'Helvetica Neue';
+    font-size: 190pt;
+    position: fixed;
+    transform: rotate(-45deg);
+    opacity: 0;
+    left: 1in;
+    top: 3in;
+    color: cyan;
+    font-weight: 700;" >DRAFT</div>
+        <article class='variant--1'>
             <h1>
                 <span>What are Complete Streets?</span>
             </h1>
@@ -133,25 +143,56 @@
 
             <p>
                 Complete Streets are streets designed for people. They prioritize
-                the safety and wellbeing of people and the vitality of the community.
-                Complete Streets emphasize <em>equity</em>, improving accessibility
+                the safety, well-being, and vitality of the community.
+                Complete Streets emphasize <em>equity</em>, improving mobility
                 for everyone regardless of income, background, age, or ability. They
-                encourage &amp; enable alternative methods of transportation, such as biking and public transit, and
-                improve facilities for those walking, using wheelchairs or strollers,
-                and other mobility tools.
+                enable &amp; encourage alternative methods of transportation, such as
+                biking and public transit, and improve access for those walking,
+                using wheelchairs or strollers, &amp; other mobility tools.
             </p>
+            <p>
                 This people-centric approach makes makes streets better for all who
                 use them, especially children and elderly. As a consequence of becoming
                 safer and more pleasant spaces to be in, Complete Streets lead to improved:
             </p>
 
             <ul class="-boxy">
-                <li><em>Livability</em> a more vibrant community with space for people to interact and participate in society</li>
-                <li><em>Environment</em> reduced emissions, flood prevention treatments, decreased heat island effect</li>
-                <li><em>Health</em> better air quality, increased physical activity, protection from road hazards</li>
-                <li><em>Economics</em> increased foot traffic and visibility, people shop more frequently</li>
-                <li><em>Transit</em> better waiting &amp; boarding facilities, improved schedule keeping</li>
-                <li><em>Driving</em> smoother traffic flow, reduced car traffic &amp; parking demand, improved visibility</li>
+                <li>
+                    <h2>Livability</h2>
+                    <p>
+                        More vibrant community with space for people to interact and participate in society
+                    </p>
+                </li>
+                <li>
+                    <h2>Environment</h2>
+                    <p>
+                        Reduced emissions, flood prevention treatments, decreased heat island effect
+                    </p>
+                </li>
+                <li>
+                    <h2>Health</h2>
+                    <p>
+                        Better air quality, encouraged physical activity, protection from road hazards
+                    </p>
+                </li>
+                <li>
+                    <h2>Economics</h2>
+                    <p>
+                        Increased foot traffic and visibility, people shop more frequently
+                    </p>
+                </li>
+                <li>
+                    <h2>Transit</h2>
+                    <p>
+                        Better waiting &amp; boarding facilities, improved schedule keeping
+                    </p>
+                </li>
+                <li>
+                    <h2>Driving</h2>
+                    <p>
+                        Smoother traffic flow, reduced car traffic &amp; parking demand,<br />improved visibility
+                    </p>
+                </li>
             </ul>
 
 
@@ -205,6 +246,7 @@
             (function () {
                 const source_el = document.querySelector('article')
                 const dest_el = document.createElement('article')
+                dest_el.className = '-variant--2'
                 dest_el.innerHTML = source_el.innerHTML
                 document.body.appendChild(dest_el)
             })();
