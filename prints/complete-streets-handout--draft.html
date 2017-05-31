@@ -167,7 +167,14 @@
                 <p style="font-size: 8pt; text-align: center; position: relative">
                     ♻︎ Please share or recycle this handout
                     <time style="color: #ccc; position: absolute; right: 0; top: 0">
-                        May 31, 2017
+                        <script>
+                            (function () {
+                                const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+                                const now = new Date()
+                                const now_formatted = `${ MONTHS[now.getMonth()]} ${ now.getDate() }, ${ now.getFullYear() }`
+                                document.write(now_formatted)
+                            })();
+                        </script>
                     </time>
                 </p>
             </footer>
@@ -176,10 +183,12 @@
 
         <span class="TrimLine"></span>
         <script>
-            const source_el = document.querySelector('article')
-            const dest_el = document.createElement('article')
-            dest_el.innerHTML = source_el.innerHTML
-            document.body.appendChild(dest_el)
+            (function () {
+                const source_el = document.querySelector('article')
+                const dest_el = document.createElement('article')
+                dest_el.innerHTML = source_el.innerHTML
+                document.body.appendChild(dest_el)
+            })();
         </script>
     </body>
 </html>
