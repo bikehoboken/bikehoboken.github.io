@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            @media screen {
+                html {
+                    background: cyan;
+                }
+            }
+            * {
+                box-sizing: border-box;
+                -webkit-font-smoothing: antialiased;
+            }
+            body {
+                padding: 0;
+                margin: 0;
+                width: 11in;
+                height: 8.5in;
+                overflow: hidden;
+                background: white;
+                font-size: 0;
+                position: relative;
+            }
+            .TrimLine {
+                position: absolute;
+                left: calc(50% - 0.5pt);
+                top: 0;
+                bottom: 0;
+                width: 0;
+                border-right: 1px dotted cyan;
+            } 
+            article {
+                font-family: Futura, Helvetica, Arial, sans-serif;
+                font-size: 10pt;
+                width: 50%;
+                height: 100%;
+                display: inline-block;
+                vertical-align: top;
+                padding: 0.25in;
+                position: relative;
+            }
+            h1 {
+                text-align: center;
+                font-size: 20pt;
+                margin-top: 0;
+            }
+            footer {
+                text-align: right;
+                font-size: 13pt;
+                position: absolute;
+                bottom: 0.25in;
+                left: 0.25in;
+                right: 0.25in;
+            }
+            footer img {
+                width: 1.5in;
+                margin-right: 2in;
+            }
+            ul.-boxy {
+                padding: 0;
+                font-size: 0;
+            }
+            ul.-boxy li {
+                font-size: 9pt;
+                display: inline-block;
+                width: 33%;
+                vertical-align: top;
+                padding: 0;
+                padding-bottom: 0.25in;
+                margin: 0;
+            }
+            ul.-boxy li em {
+                font-style: normal;
+                display: block;
+                font-size: 1.3em;
+                text-transform: uppercase;
+                text-align: left;
+                margin-bottom: 0.2em;
+            }
+            ul.-boxy li:nth-child(3n + 1) {
+                /* background: red; */
+                padding-right: 0.166667in;
+            }
+            ul.-boxy li:nth-child(3n + 2) {
+                /* background: green; */
+                padding-left: 0.083333in;
+                padding-right: 0.083333in;
+            }
+            ul.-boxy li:nth-child(3n + 3) {
+                /* background: blue; */
+                padding-left: 0.166667in;
+            }
+
+            .TK {
+                color: hotpink;
+                text-align: center;
+                font-weight: bold;
+            }
+            .TK::before {
+                content: 'TKTK: ';
+            }
+
+        </style>
+    </head>
+    <body>
+        <article>
+            <h1>
+                What are complete streets?
+            </h1>
+
+            <figure class='TK'>
+                STREETMIX GRAPHIC
+            </figure>
+
+            <p>
+                Complete Streets are streets designed for people. They prioritize
+                the safety and wellbeing of people and the vitality of the community.
+                Complete Streets emphasize <em>equity</em>, improving accessibility
+                for everyone regardless of income, background, age, or ability. They
+                encourage &amp; enable alternative methods of transportation, such as biking and public transit, and
+                improve facilities for those walking, using wheelchairs or strollers,
+                and other mobility tools.
+            </p>
+                This people-centric approach makes makes streets better for all who
+                use them, especially children and elderly. As a consequence of becoming
+                safer and more pleasant spaces to be in, Complete Streets lead to improved:
+            </p>
+
+            <ul class="-boxy">
+                <li><em>Livability</em> a more vibrant community with space for people to interact and participate in society</li>
+                <li><em>Environment</em> reduced emissions, flood prevention treatments, decreased heat island effect</li>
+                <li><em>Health</em> better air quality, increased physical activity, protection from road hazards</li>
+                <li><em>Economics</em> increased foot traffic and visibility, people shop more frequently</li>
+                <li><em>Transit</em> better waiting &amp; boarding facilities, improved schedule keeping</li>
+                <li><em>Driving</em> smoother traffic flow, reduced car traffic &amp; parking demand, improved visibility</li>
+            </ul>
+
+
+            <!--
+            Better for those who cannot drive, as well as those who must.
+
+            People who use Wheelchairs, strollers, and other mobility devices.
+
+            Improve livability &amp; economics by creating space for people to interact
+            and participate in society.
+
+            Complete streets enable and encourage more efficient and appropriate methods
+            of transportation. By doing so, they
+            reducing harmful emissions for improved air quality, better health through
+            physical activity, more accessible &amp; equitable for those who cannot drive,
+            reduced traffic            
+            By making it easier for people who can get around without driving, it makes it better for those who must drive.
+
+            Enable and encourage more efficient and appropriate methods of transportation.
+            -->
+            <figure class='TK'>
+                B/W PHOTO OF PEOPLE WALKING? OF WASHINGTON ST? OR OF A COMPLETE STREET IN NYC, TO ASPIRE TO?
+            </figure>
+
+            <footer>
+                <img src="./logo/logotype-1in.svg" style="display: inline-block; vertical-align: middle" />
+                <div style="display: inline-block; vertical-align: middle">
+                    <span class="_Tagline">streets for people</span><br />
+                    <span class="_Website">bikehoboken.org</span>
+                </div>
+                <p style="font-size: 8pt; text-align: center; position: relative">
+                    ♻︎ Please share or recycle this handout
+                    <time style="color: #ccc; position: absolute; right: 0; top: 0">
+                        May 31, 2017
+                    </time>
+                </p>
+            </footer>
+        </article>
+
+
+        <span class="TrimLine"></span>
+        <script>
+            const source_el = document.querySelector('article')
+            const dest_el = document.createElement('article')
+            dest_el.innerHTML = source_el.innerHTML
+            document.body.appendChild(dest_el)
+        </script>
+    </body>
+</html>

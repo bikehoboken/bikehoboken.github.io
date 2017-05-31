@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            * {
+                box-sizing: border-box;
+                -webkit-font-smoothing: antialiased;
+            }
+            table {
+                width: 100%;
+            }
+            body {
+                width: 11in;
+                font-family: Futura;
+                font-size: 10pt;
+                padding: 0.25in;
+            }
+            table {
+                border-collapse: collapse;
+            }
+            td {
+                height: 0.33in;
+                border-bottom: 1px solid black;
+                margin: 0;
+                padding: 0;
+            }
+            td:not(:last-child) {
+                border-right: 1px solid #ccc;
+            }
+            thead {
+                border-bottom: 2px solid black;
+            }
+            th {
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+            ._Name,
+            ._Signature,
+            ._Address,
+            ._Email {
+                width: 2in;
+                height: 0.33in;
+            }
+            ._Number {
+                width: 0.2in;
+                text-align: right;
+                padding-right: 0.1in;
+            }
+            .Preamble {
+                display: inline-block;
+                vertical-align: top;
+                width: 5.25in;
+            }
+            .Preamble.-second {
+                padding-right: 0.125in;
+            }
+            .Preamble.-third {
+                padding-left: 0.125in;
+            }
+            h1, h2 {
+                margin-top: 0;
+            }
+            ul {
+                padding-left: 0.2in;
+            }
+            li {
+                margin-bottom: 0.05in;
+            }
+            h1 {
+                floatx: left;
+            }
+            h1, h2 {
+                font-weight: 400;
+            }
+            ._Tagline,
+            ._Website {
+                font-family: Futura;
+            }
+            h2 {
+                font-size: inherit;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            footer {
+                text-align: right;
+            }
+            footer img {
+                height: 0.5in;
+                float: left;
+            }
+            ._Tagline {
+                margin-top: 0.1in;
+                display: block;
+            }
+            .Preamble p {
+                text-align: justify;
+                margin-top: 0;
+                margin-bottom: 0.1in;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="Preamble -second">
+                <h2>Petition summary and background:</h2>
+                <p>
+                    The streets of Hoboken are an integral part of our community. They allow children to get to school and parents to get to work. They bring together neighbors and draw visitors to neighborhood stores.  Streets ought to be designed for everyone — whether young or old, on foot or on bicycle, in a car or in a bus.
+                </p>
+                <p>
+                    We support Hoboken’s complete streets policy.
+                </p>
+            </div><div class="Preamble -third">
+                <h2>By signing we support:</h2>
+                <ul>
+                    <li>
+                        <p>
+                            Developing safe, protected, dedicated space in our streets for people who bicycle and walk
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Reducing wide speedways so everyone can safely share the road
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Prioritizing safety for people of all ages, especially vulnerable road users
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Ensuring that our streets work safely for everyone, whether they choose to drive, walk, or bike
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="_Number"></th>
+                    <th class="_Name">Printed Name</th>
+                    <th class="_Signature">Signature</th>
+                    <th class="_Address">Address</th>
+                    <th class="_Email">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <script>
+                    const lines = []
+                    for(let i = 1; i <= 15; i++) {
+                        lines.push('<tr><td class="_Number">' + i.toString() + '</td><td class="_Name"></td><td class="_Signature"></td><td class="_Address"></td><td class="_Email"></td></tr>')
+                    }
+                    document.write(lines.join(''))
+                </script>
+            </tbody>
+        </table>
+        <footer>
+            <img src="./logo/logotype-1in.svg" />
+            <span class="_Tagline">streets for people</span>
+            <span class="_Website">bikehoboken.org</span>
+        </footer>
+    </body>
+</html>
