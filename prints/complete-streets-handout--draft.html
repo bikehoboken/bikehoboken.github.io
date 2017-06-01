@@ -47,15 +47,15 @@
             }
             footer {
                 text-align: right;
-                font-size: 13pt;
+                font-size: 12pt;
                 position: absolute;
-                bottom: 0.20in;
+                bottom: -0.25in;
                 left: 0.25in;
                 right: 0.25in;
             }
             footer img {
-                width: 1.5in;
-                margin-right: 2in;
+                width: 1.3in;
+                margin-right: 2.32in;
             }
             ul.-boxy {
                 padding: 0;
@@ -113,7 +113,7 @@
             }
             h1 span {
                 background: white;
-                padding: 1pt;
+                padding: 2pt;
             }
         </style>
     </head>
@@ -133,7 +133,7 @@
                 <span>What are Complete Streets?</span>
             </h1>
 
-            <figure style="margin-top: -0.6in; position: relative">
+            <figure style="margin-top: -0.6in; position: relative; margin-bottom: 0.25in">
                 <img src="./images/example-complete-street-graphic--edited-for-bw--2.png" />
                 <figcaption style="position: absolute; right: 24pt; bottom: 2pt; font-size: 6pt; letter-spacing: 1px">
                     streetmix.net
@@ -145,12 +145,12 @@
                 the safety, well-being, and vitality of the community.
                 Complete Streets emphasize <em>equity</em>, improving mobility
                 for everyone regardless of income, background, age, or ability. They
-                enable &amp; encourage alternative methods of transportation, such as
-                biking and public transit, and improve access for those walking,
-                using wheelchairs or strollers, &amp; other mobility tools.
+                enable and encourage alternative methods of transportation, such as
+                biking and public transit, and improve access for those walking or
+                using wheelchairs, strollers, &amp; other mobility tools.
             </p>
             <p>
-                This people-centric approach makes makes streets better for all who
+                This people-centric approach makes streets better for all who
                 use them, especially children and elderly. As a consequence of becoming
                 safer and more pleasant spaces to be in, Complete Streets lead to improved:
             </p>
@@ -212,20 +212,19 @@
 
             Enable and encourage more efficient and appropriate methods of transportation.
             -->
-            <figure style="height: 1.65in; position: relative; margin-top: 0.05in">
+            <figure style="height: 1.65in; position: relative; margin-top: 0.2in">
                 <img style="margin-top: -1in" src="./images/sdm_hires-9thAve--PLACEHOLDER-bw.jpg" />
                 <figcaption style="letter-spacing: 1px; position: absolute; left: 1pt; bottom: 1pt; font-size: 6pt;">NYC DOT</figcaption>
             </figure>
 
             <footer>
                 <img src="./logo/logotype-1in.png" style="display: inline-block; vertical-align: middle" />
-                <div style="display: inline-block; vertical-align: middle">
+                <div style="display: inline-block; vertical-align: top">
                     <span class="_Tagline">streets for people</span><br />
                     <span class="_Website">bikehoboken.org</span>
                 </div>
-                <p style="font-size: 8pt; text-align: center; position: relative">
-                    ♻︎ Please share or recycle this handout
-                    <time style="color: #ccc; position: absolute; right: 0; top: 0">
+                <p style="opacity: 0.2; font-size: 8pt; text-align: center; position: relative; top: -0.5in">
+                    <time>Updated&nbsp;
                         <script>
                             (function () {
                                 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
@@ -234,7 +233,8 @@
                                 document.write(now_formatted)
                             })();
                         </script>
-                    </time>
+                    </time><br />
+                    ♻︎ Please share or recycle this handout
                 </p>
             </footer>
         </article>
@@ -250,5 +250,10 @@
                 document.body.appendChild(dest_el)
             })();
         </script>
+        <!-- script check for spelling, doubled-up words, etc
+        draggable guides - store in localStorage? store back in file?
+        app to serve, set content-editable, save changes back to file
+        https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/
+        -->
     </body>
 </html>
