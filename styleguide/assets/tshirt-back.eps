@@ -1,0 +1,1749 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%APL_DSC_Encoding: UTF8
+%APLProducer: (Version 10.12.5 (Build 16F73) Quartz PS Context)
+%%Title: (Unknown)
+%%Creator: (Unknown)
+%%CreationDate: (Unknown)
+%%For: (Unknown)
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 2
+%%Pages: 1
+%%BoundingBox: 0 0 612 792
+%%EndComments
+%%BeginProlog
+%%BeginFile: cg-pdf.ps
+%%Copyright: Copyright 2000-2004 Apple Computer Incorporated.
+%%Copyright: All Rights Reserved.
+currentpacking true setpacking
+/cg_md 141 dict def
+cg_md begin
+/L3? languagelevel 3 ge def
+/bd{bind def}bind def
+/ld{load def}bd
+/xs{exch store}bd
+/xd{exch def}bd
+/cmmtx matrix def
+mark
+/sc/setcolor
+/scs/setcolorspace
+/dr/defineresource
+/fr/findresource
+/T/true
+/F/false
+/d/setdash
+/w/setlinewidth
+/J/setlinecap
+/j/setlinejoin
+/M/setmiterlimit
+/i/setflat
+/rc/rectclip
+/rf/rectfill
+/rs/rectstroke
+/f/fill
+/f*/eofill
+/sf/selectfont
+/s/show
+%/as/ashow
+/xS/xshow
+/yS/yshow
+/xyS/xyshow
+/S/stroke
+/m/moveto
+/l/lineto
+/c/curveto
+/h/closepath
+/n/newpath
+/q/gsave
+/Q/grestore
+counttomark 2 idiv
+%dup (number of ld's = )print == flush	% *** how many 
+{ld}repeat pop
+/SC{	% CSname
+    /ColorSpace fr scs
+}bd
+/sopr /setoverprint where{pop/setoverprint}{/pop}ifelse ld
+/soprm /setoverprintmode where{pop/setoverprintmode}{/pop}ifelse ld
+/cgmtx matrix def
+/sdmtx{cgmtx currentmatrix pop}bd
+/CM {cgmtx setmatrix}bd		% pop the ctm: our gstate ctm on host is now identity
+/cm {cmmtx astore CM concat}bd	% reset the matrix and then concat
+/W{clip newpath}bd
+/W*{eoclip newpath}bd
+
+statusdict begin product end dup (HP) anchorsearch{
+    pop pop pop	% pop off the search results
+    true
+}{
+    pop	% previous search result
+   (hp) anchorsearch{
+	pop pop true
+    }{
+	pop false
+    }ifelse
+}ifelse
+
+{	% HP is the product: we use this method of stroking because of a bug in their clone printers with certain T3 fonts
+    { 
+	{ % charCode Wx Wy
+	    pop pop % charCode
+	    (0)dup 0 4 -1 roll put
+	    F charpath
+	}cshow
+    }
+}{
+    {F charpath}
+}ifelse
+/cply exch bd
+/cps {cply stroke}bd
+/pgsave 0 def
+/bp{/pgsave save store}bd
+/ep{pgsave restore showpage}def		% dont' bind
+/re{4 2 roll m 1 index 0 rlineto 0 exch rlineto neg 0 rlineto h}bd
+
+/scrdict 10 dict def
+/scrmtx matrix def
+/patarray 0 def
+/createpat{patarray 3 1 roll put}bd
+/makepat{
+scrmtx astore pop
+gsave
+initgraphics
+CM 
+patarray exch get
+scrmtx
+makepattern
+grestore
+setpattern
+}bd
+
+/cg_BeginEPSF{
+    userdict save/cg_b4_Inc_state exch put
+    userdict/cg_endepsf/cg_EndEPSF load put
+    count userdict/cg_op_count 3 -1 roll put 
+    countdictstack dup array dictstack userdict/cg_dict_array 3 -1 roll put
+    3 sub{end}repeat
+    /showpage {} def
+    0 setgray 0 setlinecap 1 setlinewidth 0 setlinejoin
+    10 setmiterlimit [] 0 setdash newpath
+    false setstrokeadjust false setoverprint	% don't use F
+}bd
+/cg_EndEPSF{
+  countdictstack 3 sub { end } repeat
+  cg_dict_array 3 1 index length 3 sub getinterval
+  {begin}forall
+  count userdict/cg_op_count get sub{pop}repeat
+  userdict/cg_b4_Inc_state get restore
+  F setpacking
+}bd
+
+/cg_biproc{currentfile/RunLengthDecode filter}bd
+/cg_aiproc{currentfile/ASCII85Decode filter/RunLengthDecode filter}bd
+/ImageDataSource 0 def
+L3?{
+    /cg_mibiproc{pop pop/ImageDataSource{cg_biproc}def}bd
+    /cg_miaiproc{pop pop/ImageDataSource{cg_aiproc}def}bd
+}{
+    /ImageBandMask 0 def
+    /ImageBandData 0 def
+    /cg_mibiproc{
+	string/ImageBandMask xs
+	string/ImageBandData xs
+	/ImageDataSource{[currentfile/RunLengthDecode filter dup ImageBandMask/readstring cvx
+	    /pop cvx dup ImageBandData/readstring cvx/pop cvx]cvx bind}bd
+    }bd
+    /cg_miaiproc{	
+	string/ImageBandMask xs
+	string/ImageBandData xs
+	/ImageDataSource{[currentfile/ASCII85Decode filter/RunLengthDecode filter
+	    dup ImageBandMask/readstring cvx
+	    /pop cvx dup ImageBandData/readstring cvx/pop cvx]cvx bind}bd
+    }bd
+}ifelse
+/imsave 0 def
+/BI{save/imsave xd mark}bd
+/EI{imsave restore}bd
+/ID{
+counttomark 2 idiv
+dup 2 add	% leave room for imagetype and imagematrix
+dict begin
+{def} repeat
+pop		% remove mark
+/ImageType 1 def
+/ImageMatrix[Width 0 0 Height neg 0 Height]def
+currentdict dup/ImageMask known{ImageMask}{F}ifelse exch
+% currentdict on stack
+L3?{
+    dup/MaskedImage known
+    { 
+	pop
+	<<
+	    /ImageType 3
+	    /InterleaveType 2
+	    /DataDict currentdict
+	    /MaskDict
+	    <<  /ImageType 1
+		/Width Width
+		/Height Height
+		/ImageMatrix ImageMatrix
+		/BitsPerComponent 1
+		/Decode [0 1]
+		currentdict/Interpolate known
+		{/Interpolate Interpolate}if
+	    >>
+	>>
+    }if
+}if
+exch
+{imagemask}{image}ifelse	
+end	% pop imagedict from dict stack
+}bd
+
+/cguidfix{statusdict begin mark version end
+{cvr}stopped{cleartomark 0}{exch pop}ifelse
+2012 lt{dup findfont dup length dict begin
+{1 index/FID ne 2 index/UniqueID ne and
+{def} {pop pop} ifelse}forall
+currentdict end definefont pop
+}{pop}ifelse
+}bd
+/t_array 0 def
+/t_i 0 def
+/t_c 1 string def
+/x_proc{ % x y
+    exch t_array t_i get add exch moveto
+    /t_i t_i 1 add store
+}bd
+/y_proc{ % x y
+    t_array t_i get add moveto
+    /t_i t_i 1 add store
+}bd
+/xy_proc{
+        % x y
+	t_array t_i 2 copy 1 add get 3 1 roll get 
+	4 -1 roll add 3 1 roll add moveto
+	/t_i t_i 2 add store
+}bd
+/sop 0 def		% don't bind sop
+/cp_proc/x_proc ld 	% default moveto proc is for xwidths only
+/base_charpath		% string array
+{
+    /t_array xs
+    /t_i 0 def
+    { % char
+	t_c 0 3 -1 roll put
+        currentpoint
+	t_c cply sop
+        cp_proc
+    }forall
+    /t_array 0 def
+}bd
+/sop/stroke ld		% default sop is stroke. Done here so we don't bind in /base_charpath 
+
+% default sop is stroke
+/nop{}def
+/xsp/base_charpath ld
+/ysp{/cp_proc/y_proc ld base_charpath/cp_proc/x_proc ld}bd
+/xysp{/cp_proc/xy_proc ld base_charpath/cp_proc/x_proc ld}bd
+/xmp{/sop/nop ld /cp_proc/x_proc ld base_charpath/sop/stroke ld}bd
+/ymp{/sop/nop ld /cp_proc/y_proc ld base_charpath/sop/stroke ld}bd
+/xymp{/sop/nop ld /cp_proc/xy_proc ld base_charpath/sop/stroke ld}bd
+/refnt{ % newname encoding fontname
+findfont dup length dict copy dup
+/Encoding 4 -1 roll put 
+definefont pop
+}bd
+/renmfont{ % newname fontname
+findfont dup length dict copy definefont pop
+}bd
+
+L3? dup dup{save exch}if
+
+% languagelevel2 ONLY code goes here
+
+/Range 0 def
+/DataSource 0 def
+/val 0 def
+/nRange 0 def
+/mulRange 0 def
+/d0 0 def
+/r0 0 def
+/di 0 def
+/ri 0 def
+/a0 0 def
+/a1 0 def
+/r1 0 def
+/r2 0 def
+/dx 0 def
+/Nsteps 0 def
+/sh3tp 0 def
+/ymax 0 def
+/ymin 0 def
+/xmax 0 def
+/xmin 0 def
+
+/setupFunEval % funDict -- 	% this calculates and sets up a function dict for evaulation.
+{
+    begin
+	/nRange Range length 2 idiv store
+	/mulRange   % precompute the range data needed to map a sample value from the table to a range value
+		    % this data looks like [ range0mul range0min range1mul range1min ... rangeN-1mul rangeN-1min ]
+	[ 
+	    0 1 nRange 1 sub
+	    { % index
+		    2 mul/nDim2 xd		% 2*dimension# we are dealing with
+		    Range nDim2 get		% ymin
+		    Range nDim2 1 add get	% ymin ymax 
+		    1 index sub			% ymin (ymax-ymin)
+						% xmin = 0, xmax = 255 (2^bitspersample - 1)
+		    255 div			% ymin (ymax-ymin)/(xmax - xmin)
+		    exch			% (ymax-ymin)/(xmax - xmin) ymin
+	    }for
+	]store
+    end
+}bd
+
+/FunEval % val1 fundict -> comp1 comp2 ... compN
+{
+    begin
+	% the value passed in is the base index into the table
+	nRange mul /val xd	% compute the actual index to the table
+				% since there are nRange entries per base index
+	0 1 nRange 1 sub
+	{
+	    dup 2 mul/nDim2 xd % dim
+	    val	% base value to use to do our lookup
+	    add DataSource exch get %  lookedupval
+	    mulRange nDim2 get mul 	% lookedupval*(ymax-ymin)/(xmax-xmin)
+	    mulRange nDim2 1 add get % lookedupval*(ymax-ymin)/(xmax-xmin) ymin
+	    add % interpolated result
+	}for	% comp1 comp2 ... compN
+    end
+}bd
+
+/max % a b -> max(a, b)
+{
+	2 copy lt
+	{exch pop}{pop}ifelse
+}bd
+
+/sh2
+{	% emulation of shading type 2. Assumes shading dictionary is top dictionary on the dict stack
+	/Coords load aload pop 	% x0 y0 x1 y1
+	3 index 3 index translate	% origin is now at beginning point of shading
+					% x0 y0 x1 y1
+	3 -1 roll sub	% x0 x1 y1-y0
+	3 1 roll exch 	% y1-y0 x1 x0
+	sub				% y1-y0 x1-x0
+	2 copy
+	dup mul exch dup mul add sqrt	% length of segment between two points
+	dup
+	scale  
+	atan	% atan (dy/dx)
+	%dup (rotation angle = )print ==
+	rotate		% now line between 0,0 and 1,0 is the line perpendicular to which the axial lines are drawn					
+	
+	/Function load setupFunEval	% may need to setup function dictionary by calling setupFunEval
+	
+	% this is now specific to axial shadings. Compute the maximum bounds to fill
+	clippath {pathbbox}stopped {0 0 0 0}if newpath 	% x0 y0 x1 y1
+	/ymax xs
+	/xmax xs
+	/ymin xs
+	/xmin xs
+	currentdict/Extend known
+	{
+		/Extend load 0 get
+		{	
+			0/Function load FunEval sc	% evaluate the function to get a color and set it
+			xmin ymin xmin abs ymax ymin sub rectfill
+		}if
+	}if
+	% paint the rects. The sampling frequency is that of our table
+	/Nsteps/Function load/Size get 0 get 1 sub store
+	/dx 1 Nsteps div store
+	gsave
+		/di ymax ymin sub store
+		/Function load
+		% loop Nsteps + 1 times, incrementing the index by 1 each time
+		0 1 Nsteps
+		{
+			1 index FunEval sc
+			0 ymin dx di rectfill
+			dx 0 translate
+		}for
+		pop	% pop our function
+	grestore	% origin is back to start point
+	currentdict/Extend known
+	{
+		/Extend load 1 get
+		{	
+			Nsteps/Function load FunEval sc	% last element
+			1 ymin xmax 1 sub abs ymax ymin sub rectfill
+		}if
+	}if
+}bd
+
+/shp	% this paints our shape for shading type 3
+{	% x1 r1 x0 r0 -
+	4 copy
+
+	% fill interior arc
+	dup 0 gt{
+		0 exch a1 a0 arc
+	}{
+		pop 0 moveto
+	}ifelse
+
+	dup 0 gt{
+		0 exch a0 a1 arcn
+	}{
+		pop 0 lineto
+	}ifelse
+	
+	fill
+
+	% fill exterior arc
+	dup 0 gt{
+		0 exch a0 a1 arc
+	}{
+		pop 0 moveto
+	}ifelse
+
+	dup 0 gt{
+		0 exch a1 a0 arcn
+	}{
+		pop 0 lineto
+	}ifelse
+	
+	fill
+}bd
+
+/calcmaxs
+{	% calculate maximum distance vector from origin to corner points
+	% of bbox
+	xmin dup mul ymin dup mul add sqrt		% (xmin2 + ymin2)
+	xmax dup mul ymin dup mul add sqrt		% (xmax2 + ymin2)
+	xmin dup mul ymax dup mul add sqrt		% (xmin2 + ymax2)
+	xmax dup mul ymax dup mul add sqrt		% (xmax2 + ymax2)
+	max max max								% maximum value
+}bd
+
+/sh3
+{	% emulation of shading type 3. Assumes shading dictionary is top dictionary on the dict stack
+	/Coords load aload pop 	% x0 y0 r1 x1 y1 r2
+	5 index 5 index translate	% origin is now at first circle origin
+	3 -1 roll 6 -1 roll sub		% y0 r1 y1 r2 dx
+	3 -1 roll 5 -1 roll sub		% r1 r2 dx dy
+	2 copy dup mul exch dup mul add sqrt
+	/dx xs						% r1 r2 dx dy
+	2 copy 0 ne exch 0 ne or
+	{
+		% r1 r2 dx dy
+		exch atan rotate	% we are now rotated so dy is zero and positive values of dx move us as expected
+	}{
+		pop pop
+	}ifelse
+	% r1 r2		
+	/r2 xs
+	/r1 xs
+	/Function load 
+	dup/Size get 0 get 1 sub	% this is the size of our table minus 1
+	/Nsteps xs		% at some point we should optimize this better so NSteps is based on needed steps for the device
+	setupFunEval		% may need to setup function dictionary by calling setupFunEval
+	% determine the case:
+	% case 0: circle1 inside circle2
+	% case 1: circle 2 inside circle 1
+	% case 2: r1 = r2 
+	% case 3: r1 != r2
+	dx r2 add r1 lt{
+		% circle 2 inside of circle 1
+		0 
+	}{
+		dx r1 add r2 le
+		{ % circle 1 inside of circle 2
+			1
+		}{ % circles don't contain each other
+			r1 r2 eq
+			{	% equal
+				2
+			}{ % r1 != r2
+				3
+			}ifelse		
+		}ifelse
+	}ifelse
+	/sh3tp xs		% sh3tp has the number of our different cases
+	clippath {pathbbox}stopped {0 0 0 0}if 
+	newpath 	% x0 y0 x1 y1
+	/ymax xs
+	/xmax xs
+	/ymin xs
+	/xmin xs
+
+	% Arc angle atan( sqrt((dx*dx + dy*dy) - dr*dr), dr)
+	dx dup mul r2 r1 sub dup mul sub dup 0 gt
+	{
+		sqrt r2 r1 sub atan
+		/a0 exch 180 exch sub store 
+		/a1 a0 neg store 
+	}{
+		pop
+		/a0 0 store
+		/a1 360 store		
+	}ifelse		
+
+	currentdict/Extend known
+	{
+		/Extend load 0 get r1 0 gt and	% no need to extend if the radius of the first end is 0
+		{	
+			0/Function load FunEval sc	% evaluate the function to get a color and set it
+			% case 0: circle1 inside circle2
+			% case 1: circle 2 inside circle 1
+			% case 2: circles don't contain each other and r1 == r2
+			% case 3: circles don't contain each other and r1 != r2
+			{ 
+				{	% case 0
+					dx 0 r1 360 0 arcn
+					xmin ymin moveto
+					xmax ymin lineto
+					xmax ymax lineto
+					xmin ymax lineto
+					xmin ymin lineto
+					eofill		% for the bigger radius we fill everything except our circle
+				}
+				{	% case 1
+					r1 0 gt{0 0 r1 0 360 arc fill}if
+				}
+				{	% case 2
+					% r1 == r2, extend 0
+					% r3 = r, x3 = -(abs(minx) + r), x1 = 0
+				
+					% x(i+1) r(i+1) x(i) r(i) shp
+					0 r1 xmin abs r1 add neg r1 shp
+				}
+				{	% case 3
+					% no containment, r1 != r2
+				
+					r2 r1 gt{	% the endpoint we are drawing is that with a circle of zero radius
+						% x(i+1) r(i+1) x(i) r(i) shp
+						0 r1
+						r1 neg r2 r1 sub div dx mul	% this is point of beginning circle
+						0	% point of ending circle
+						shp	% takes x(i+1) r(i+1) x(i) r(i)
+					}{	% the first circle is the bigger of the two
+						% we find a circle on our line which is outside the bbox in the
+						% negative direction
+						% x(i+1) r(i+1) x(i) r(i) shp
+						0 r1 calcmaxs	% 0 r1 maxs
+						dup
+						% calculating xs: (-(maxs+r2)*x2)/(x2-(r1-r2))
+						r2 add dx mul dx r1 r2 sub sub div
+						neg				% maxs xs'
+						exch 1 index	% xs' maxs xs'
+						abs exch sub
+						shp
+					}ifelse
+				} 
+			}sh3tp get exec	% execute the extend at beginning proc for our shading type
+		}if
+	}if
+
+	% now do the shading
+	/d0 0 store
+	/r0 r1 store
+	/di dx Nsteps div store
+	/ri r2 r1 sub Nsteps div store 
+	/Function load 
+	0 1 Nsteps
+	{	% function t(i)
+		1 index FunEval sc
+		d0 di add r0 ri add d0 r0 shp
+		{
+		% fill interior arc
+		d0 0 r0 a1 a0 arc
+		d0 di add 0 r0 ri add a0 a1 arcn
+		fill
+		
+		% fill exterior arc
+		d0 0 r0 a0 a1 arc
+		d0 di add 0 r0 ri add a1 a0 arcn
+		fill
+		}pop
+		
+		% advance to next
+		/d0 d0 di add store
+		/r0 r0 ri add store
+	}for
+	pop	% pop our function dict
+
+	% handle Extend
+	currentdict/Extend known
+	{
+		/Extend load 1 get r2 0 gt and	% no need to extend if the radius of the last end is 0
+		{	
+			Nsteps/Function load FunEval sc	% last element
+			% case 0: circle1 inside circle2
+			% case 1: circle 2 inside circle 1
+			% case 2: circles don't contain each other and r1 == r2
+			% case 3: circles don't contain each other and r1 != r2
+			{ 
+				{
+					dx 0 r2 0 360 arc fill
+				} 
+				{
+					dx 0 r2 360 0 arcn
+					xmin ymin moveto
+					xmax ymin lineto
+					xmax ymax lineto
+					xmin ymax lineto
+					xmin ymin lineto
+					eofill		% for the bigger radius we fill everything except our circle
+				} 
+				{	% r1 == r2, extend 1
+					% r3 = r, x3 = (abs(xmax) + r), x1 = dx
+					% x(i+1) r(i+1) x(i) r(i) shp
+					xmax abs r1 add r1 dx r1 shp
+				}	
+				{	% no containment, r1 != r2
+			
+					r2 r1 gt{
+						% we find a circle on our line which is outside the bbox in the
+						% positive direction
+						% x(i+1) r(i+1) x(i) r(i) shp
+						calcmaxs dup	% maxs maxs
+						% calculating xs: ((maxs+r1)*x2)/(x2-(r2-r1))
+						r1 add dx mul dx r2 r1 sub sub div	% maxs xs
+						exch 1 index	% xs maxs xs
+						exch sub
+						dx r2
+						shp
+					}{	% the endpoint we are drawing is that with a circle of zero radius
+						% x(i+1) r(i+1) x(i) r(i) shp
+						r1 neg r2 r1 sub div dx mul	% this is point of ending circle
+						0		% radius of ending circle
+						dx 		% point of starting circle
+						r2		% radius of starting circle
+						shp
+					}ifelse
+				}
+			}			
+			sh3tp get exec	% execute the extend at end proc for our shading type
+		}if
+	}if
+}bd
+/sh		% emulation of shfill operator for type 2 and type 3 shadings based on type 0 functions
+{	% shadingDict --
+	begin
+		/ShadingType load dup dup 2 eq exch 3 eq or
+		{	% shadingtype
+			gsave
+				newpath
+				/ColorSpace load scs
+				currentdict/BBox known
+				{
+					/BBox load aload pop	% llx lly urx ury
+					2 index sub				% llx lly urx ury-lly
+					3 index					% llx lly urx ury-lly llx
+					3 -1 roll exch sub 
+					exch rectclip
+				}if
+				2 eq
+				{sh2}{sh3}ifelse
+			grestore
+		}{
+			% shadingtype
+			pop 
+			(DEBUG: shading type unimplemented\n)print flush
+		}ifelse
+	end
+}bd
+
+% end of language level 2 ONLY code
+
+{restore}if not dup{save exch}if
+% languagelevel3 ONLY code goes here
+	L3?{	% we do these loads conditionally or else they will fail on a level 2 printer
+		/sh/shfill ld
+		/csq/clipsave ld
+		/csQ/cliprestore ld
+	}if
+{restore}if
+
+%currentdict dup maxlength exch length sub (number of extra slots in md = )print == flush	% *** how many entries are free
+end
+setpacking
+% count 0 ne { pstack(***extras on stack during prolog execution***\n)print flush}if	% *** BARK if anything is left on stack
+%%EndFile
+%%EndProlog
+%%BeginSetup
+%%EndSetup
+%%Page: 1 1
+%%PageBoundingBox: 0 0 612 792
+%%BeginPageSetup
+cg_md begin
+bp
+sdmtx
+[ /CIEBasedABC 4 dict dup begin 
+/WhitePoint [ 0.9505 1.0000 1.0891 ] def 
+/DecodeABC [ 
+{ 1.0 0.0 3 -1 roll 1 index 1 index le { exch pop} { pop } ifelse 
+ 1 index 1 index ge { exch pop } { pop } ifelse < 
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000001010101010101010101010101
+0101010101010101010101010101010101010101010101020202020202020202
+0202020202020202020202020202020202030303030303030303030303030303
+0303030303030304040404040404040404040404040404040404050505050505
+0505050505050505050506060606060606060606060606060607070707070707
+0707070707070708080808080808080808080808090909090909090909090909
+0a0a0a0a0a0a0a0a0a0a0a0b0b0b0b0b0b0b0b0b0b0b0c0c0c0c0c0c0c0c0c0c
+0d0d0d0d0d0d0d0d0d0d0e0e0e0e0e0e0e0e0e0f0f0f0f0f0f0f0f0f10101010
+1010101010111111111111111112121212121212121313131313131313141414
+1414141414151515151515151616161616161616171717171717171818181818
+18181919191919191a1a1a1a1a1a1a1b1b1b1b1b1b1c1c1c1c1c1c1c1d1d1d1d
+1d1d1e1e1e1e1e1e1f1f1f1f1f1f202020202020212121212121222222222223
+2323232323242424242425252525252526262626262727272727282828282829
+292929292a2a2a2a2a2b2b2b2b2b2c2c2c2c2c2d2d2d2d2d2e2e2e2e2e2f2f2f
+2f2f303030303131313131323232323333333333343434343535353535363636
+36373737373838383839393939393a3a3a3a3b3b3b3b3c3c3c3c3d3d3d3d3e3e
+3e3e3f3f3f3f4040404041414141424242424343434444444445454545464646
+4647474748484848494949494a4a4a4b4b4b4b4c4c4c4d4d4d4d4e4e4e4f4f4f
+4f50505051515151525252535353535454545555555656565657575758585859
+59595a5a5a5a5b5b5b5c5c5c5d5d5d5e5e5e5f5f5f6060606061616162626263
+63636464646565656666666767676868686969696a6a6a6b6b6b6c6c6d6d6d6e
+6e6e6f6f6f707070717171727273737374747475757576767677777878787979
+797a7a7b7b7b7c7c7c7d7d7e7e7e7f7f7f808081818182828283838484848585
+86868687878888888989898a8a8b8b8b8c8c8d8d8d8e8e8f8f90909091919292
+9293939494949595969697979798989999999a9a9b9b9c9c9c9d9d9e9e9f9f9f
+a0a0a1a1a2a2a3a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaaabababacacadadae
+aeafafb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b6b7b7b8b8b9b9bababbbbbcbcbd
+bdbebebebfbfc0c0c1c1c2c2c3c3c4c4c5c5c6c6c7c7c8c8c9c9cacacbcbcccc
+cdcdcececfcfd0d0d1d1d2d2d3d3d4d4d5d5d6d6d7d7d8d8d9d9dadadbdcdcdd
+dddededfdfe0e0e1e1e2e2e3e3e4e4e5e6e6e7e7e8e8e9e9eaeaebebecededee
+eeefeff0f0f1f1f2f3f3f4f4f5f5f6f6f7f8f8f9f9fafafbfcfcfdfdfefeffff
+>  dup length 1 sub 3 -1 roll mul dup dup floor cvi exch ceiling 
+ cvi 3 index exch get 4 -1 roll 3 -1 roll get
+ dup 3 1 roll sub 3 -1 roll dup floor cvi sub mul add 255 div } bind 
+
+{ 1.0 0.0 3 -1 roll 1 index 1 index le { exch pop} { pop } ifelse 
+ 1 index 1 index ge { exch pop } { pop } ifelse < 
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000001010101010101010101010101
+0101010101010101010101010101010101010101010101020202020202020202
+0202020202020202020202020202020202030303030303030303030303030303
+0303030303030304040404040404040404040404040404040404050505050505
+0505050505050505050506060606060606060606060606060607070707070707
+0707070707070708080808080808080808080808090909090909090909090909
+0a0a0a0a0a0a0a0a0a0a0a0b0b0b0b0b0b0b0b0b0b0b0c0c0c0c0c0c0c0c0c0c
+0d0d0d0d0d0d0d0d0d0d0e0e0e0e0e0e0e0e0e0f0f0f0f0f0f0f0f0f10101010
+1010101010111111111111111112121212121212121313131313131313141414
+1414141414151515151515151616161616161616171717171717171818181818
+18181919191919191a1a1a1a1a1a1a1b1b1b1b1b1b1c1c1c1c1c1c1c1d1d1d1d
+1d1d1e1e1e1e1e1e1f1f1f1f1f1f202020202020212121212121222222222223
+2323232323242424242425252525252526262626262727272727282828282829
+292929292a2a2a2a2a2b2b2b2b2b2c2c2c2c2c2d2d2d2d2d2e2e2e2e2e2f2f2f
+2f2f303030303131313131323232323333333333343434343535353535363636
+36373737373838383839393939393a3a3a3a3b3b3b3b3c3c3c3c3d3d3d3d3e3e
+3e3e3f3f3f3f4040404041414141424242424343434444444445454545464646
+4647474748484848494949494a4a4a4b4b4b4b4c4c4c4d4d4d4d4e4e4e4f4f4f
+4f50505051515151525252535353535454545555555656565657575758585859
+59595a5a5a5a5b5b5b5c5c5c5d5d5d5e5e5e5f5f5f6060606061616162626263
+63636464646565656666666767676868686969696a6a6a6b6b6b6c6c6d6d6d6e
+6e6e6f6f6f707070717171727273737374747475757576767677777878787979
+797a7a7b7b7b7c7c7c7d7d7e7e7e7f7f7f808081818182828283838484848585
+86868687878888888989898a8a8b8b8b8c8c8d8d8d8e8e8f8f90909091919292
+9293939494949595969697979798989999999a9a9b9b9c9c9c9d9d9e9e9f9f9f
+a0a0a1a1a2a2a3a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaaabababacacadadae
+aeafafb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b6b7b7b8b8b9b9bababbbbbcbcbd
+bdbebebebfbfc0c0c1c1c2c2c3c3c4c4c5c5c6c6c7c7c8c8c9c9cacacbcbcccc
+cdcdcececfcfd0d0d1d1d2d2d3d3d4d4d5d5d6d6d7d7d8d8d9d9dadadbdcdcdd
+dddededfdfe0e0e1e1e2e2e3e3e4e4e5e6e6e7e7e8e8e9e9eaeaebebecededee
+eeefeff0f0f1f1f2f3f3f4f4f5f5f6f6f7f8f8f9f9fafafbfcfcfdfdfefeffff
+>  dup length 1 sub 3 -1 roll mul dup dup floor cvi exch ceiling 
+ cvi 3 index exch get 4 -1 roll 3 -1 roll get
+ dup 3 1 roll sub 3 -1 roll dup floor cvi sub mul add 255 div } bind 
+
+{ 1.0 0.0 3 -1 roll 1 index 1 index le { exch pop} { pop } ifelse 
+ 1 index 1 index ge { exch pop } { pop } ifelse < 
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000001010101010101010101010101
+0101010101010101010101010101010101010101010101020202020202020202
+0202020202020202020202020202020202030303030303030303030303030303
+0303030303030304040404040404040404040404040404040404050505050505
+0505050505050505050506060606060606060606060606060607070707070707
+0707070707070708080808080808080808080808090909090909090909090909
+0a0a0a0a0a0a0a0a0a0a0a0b0b0b0b0b0b0b0b0b0b0b0c0c0c0c0c0c0c0c0c0c
+0d0d0d0d0d0d0d0d0d0d0e0e0e0e0e0e0e0e0e0f0f0f0f0f0f0f0f0f10101010
+1010101010111111111111111112121212121212121313131313131313141414
+1414141414151515151515151616161616161616171717171717171818181818
+18181919191919191a1a1a1a1a1a1a1b1b1b1b1b1b1c1c1c1c1c1c1c1d1d1d1d
+1d1d1e1e1e1e1e1e1f1f1f1f1f1f202020202020212121212121222222222223
+2323232323242424242425252525252526262626262727272727282828282829
+292929292a2a2a2a2a2b2b2b2b2b2c2c2c2c2c2d2d2d2d2d2e2e2e2e2e2f2f2f
+2f2f303030303131313131323232323333333333343434343535353535363636
+36373737373838383839393939393a3a3a3a3b3b3b3b3c3c3c3c3d3d3d3d3e3e
+3e3e3f3f3f3f4040404041414141424242424343434444444445454545464646
+4647474748484848494949494a4a4a4b4b4b4b4c4c4c4d4d4d4d4e4e4e4f4f4f
+4f50505051515151525252535353535454545555555656565657575758585859
+59595a5a5a5a5b5b5b5c5c5c5d5d5d5e5e5e5f5f5f6060606061616162626263
+63636464646565656666666767676868686969696a6a6a6b6b6b6c6c6d6d6d6e
+6e6e6f6f6f707070717171727273737374747475757576767677777878787979
+797a7a7b7b7b7c7c7c7d7d7e7e7e7f7f7f808081818182828283838484848585
+86868687878888888989898a8a8b8b8b8c8c8d8d8d8e8e8f8f90909091919292
+9293939494949595969697979798989999999a9a9b9b9c9c9c9d9d9e9e9f9f9f
+a0a0a1a1a2a2a3a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaaabababacacadadae
+aeafafb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b6b7b7b8b8b9b9bababbbbbcbcbd
+bdbebebebfbfc0c0c1c1c2c2c3c3c4c4c5c5c6c6c7c7c8c8c9c9cacacbcbcccc
+cdcdcececfcfd0d0d1d1d2d2d3d3d4d4d5d5d6d6d7d7d8d8d9d9dadadbdcdcdd
+dddededfdfe0e0e1e1e2e2e3e3e4e4e5e6e6e7e7e8e8e9e9eaeaebebecededee
+eeefeff0f0f1f1f2f3f3f4f4f5f5f6f6f7f8f8f9f9fafafbfcfcfdfdfefeffff
+>  dup length 1 sub 3 -1 roll mul dup dup floor cvi exch ceiling 
+ cvi 3 index exch get 4 -1 roll 3 -1 roll get
+ dup 3 1 roll sub 3 -1 roll dup floor cvi sub mul add 255 div } bind 
+] def 
+/MatrixABC [ 0.4124 0.2126 0.0193 0.3576 0.7151 0.1192 0.1805 0.0722 0.9508 ] def 
+/RangeLMN [ 0.0 0.9505 0.0 1.0000 0.0 1.0891 ] def 
+end ] /Cs1 exch/ColorSpace dr pop
+%%EndPageSetup
+0.60000002 i
+/Cs1 SC
+1 1 1 sc
+q
+311.62878 224.32561 m
+290.67938 224.32561 287.01547 178.2784 269.72995 180.8858 c
+252.44446 183.49319 262.50543 228.57545 242.48674 234.7552 c
+222.46805 240.93495 205.40483 198.01428 189.65521 205.6048 c
+173.90559 213.19531 196.79749 253.30685 179.48827 265.11725 c
+162.17906 276.92767 133.23265 240.94724 120.41834 252.84642 c
+107.60404 264.74561 141.29282 296.32236 128.23106 312.71399 c
+115.16933 329.10565 76.911743 303.26245 68.171364 318.41302 c
+59.430988 333.56357 100.92323 353.79977 93.269554 373.31622 c
+85.615875 392.83264 41.446484 379.423 37.556648 396.47873 c
+33.666813 413.53445 79.275772 420.63208 77.71022 441.53915 c
+76.144669 462.44623 29.988104 462.66162 31.294443 480.10706 c
+32.60078 497.55249 78.273888 490.88086 82.93557 511.32089 c
+87.597252 531.76093 43.554737 545.58221 49.941174 561.86725 c
+56.32761 578.15228 98.006615 558.3042 108.48132 576.46106 c
+118.95603 594.61786 80.940926 620.81696 91.839996 634.49463 c
+102.73907 648.17224 136.72061 616.91125 152.07762 631.17157 c
+167.43462 645.43188 138.82474 681.68091 153.26802 691.53583 c
+167.7113 701.39075 190.97597 661.49457 209.85074 670.59125 c
+228.72549 679.68793 212.06296 722.76599 228.76709 727.92255 c
+245.47122 733.0791 255.95184 688.09271 276.66727 691.21747 c
+297.38269 694.34222 294.14804 740.42163 311.62878 740.42163 c
+329.10956 740.42163 325.87488 694.34222 346.5903 691.21747 c
+367.30573 688.09271 377.78635 733.0791 394.49048 727.92255 c
+411.19461 722.76599 394.53207 679.68793 413.40683 670.59125 c
+432.28162 661.49457 455.54626 701.39075 469.98956 691.53583 c
+484.43283 681.68091 455.82294 645.43188 471.17996 631.17157 c
+486.53696 616.91125 520.51849 648.17224 531.4176 634.49463 c
+542.31665 620.81696 504.30154 594.61786 514.77625 576.46106 c
+525.25098 558.3042 566.92993 578.15228 573.31641 561.86725 c
+579.70282 545.58221 535.66034 531.76093 540.32202 511.32089 c
+544.9837 490.88086 590.6568 497.55249 591.96313 480.10706 c
+593.26947 462.66162 547.11292 462.44623 545.54736 441.53915 c
+543.98181 420.63208 589.59076 413.53445 585.70093 396.47873 c
+581.8111 379.423 537.64172 392.83264 529.98804 373.31622 c
+522.33435 353.79977 563.8266 333.56357 555.08618 318.41302 c
+546.34583 303.26245 508.08826 329.10565 495.02652 312.71399 c
+481.96475 296.32236 515.6535 264.74561 502.83923 252.84642 c
+490.02493 240.94724 461.07852 276.92767 443.76929 265.11725 c
+426.46008 253.30685 449.35199 213.19531 433.60236 205.6048 c
+417.85275 198.01428 400.78952 240.93495 380.77084 234.7552 c
+360.75214 228.57545 370.81311 183.49319 353.52762 180.8858 c
+336.2421 178.2784 332.57819 224.32561 311.62878 224.32561 c
+h
+312.95215 272.62585 m
+414.914 272.62585 497.5704 355.34659 497.5704 457.38776 c
+497.5704 559.42889 414.914 642.1496 312.95215 642.1496 c
+210.9903 642.1496 128.33388 559.42889 128.33388 457.38776 c
+128.33388 355.34659 210.9903 272.62585 312.95215 272.62585 c
+h
+W*
+0 0 612 792 rc
+26.267233 745.42163 m
+596.99036 745.42163 l
+596.99036 175.7791 l
+26.267233 175.7791 l
+h
+f
+Q
+q
+0 0 612 792 rc
+212 0 0 317 206 299 cm
+BI
+/Width 636
+/Height 951
+/BitsPerComponent 8
+/Decode[
+0 1
+0 1
+0 1
+]
+/DataSource cg_aiproc
+ID
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+NW4S0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4S0JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC`0JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$NW4M
+~> %APLeod
+EI
+Q
+q
+112.097 92.906998 m
+110.53033 93.721672 108.99501 94.128998 107.491 94.128998 c
+106.70766 94.128998 106.07317 93.972336 105.5875 93.658997 c
+105.10183 93.345665 104.859 92.922668 104.859 92.389999 c
+104.859 92.108002 104.89816 91.880836 104.9765 91.708504 c
+105.05483 91.536163 105.22717 91.371666 105.4935 91.214996 c
+105.75983 91.058334 106.1515 90.917336 106.6685 90.792 c
+107.1855 90.666664 107.867 90.510002 108.713 90.321999 c
+111.06301 89.851997 112.81766 89.01384 113.977 87.807503 c
+115.13634 86.601158 115.716 85.058006 115.716 83.178001 c
+115.716 81.76799 115.43401 80.499008 114.87 79.371002 c
+114.306 78.242996 113.52267 77.295174 112.52 76.527496 c
+111.51733 75.759827 110.311 75.164505 108.901 74.741501 c
+107.49099 74.318497 105.94001 74.107002 104.248 74.107002 c
+100.98932 74.107002 97.777679 75.031326 94.612999 76.879997 c
+97.714996 82.896004 l
+100.09634 81.266655 102.35233 80.452003 104.483 80.452003 c
+105.26633 80.452003 105.90866 80.624329 106.41 80.969002 c
+106.91134 81.313667 107.162 81.752327 107.162 82.285004 c
+107.162 82.598335 107.12283 82.856834 107.0445 83.060501 c
+106.96616 83.264168 106.80167 83.452164 106.551 83.624496 c
+106.30033 83.796837 105.93217 83.953499 105.4465 84.094498 c
+104.96083 84.235504 104.32634 84.384331 103.543 84.541 c
+100.91099 85.073669 99.070175 85.86483 98.0205 86.914497 c
+96.970825 87.964172 96.445999 89.413322 96.445999 91.262001 c
+96.445999 92.609337 96.696663 93.823494 97.197998 94.904503 c
+97.699333 95.985504 98.419998 96.901993 99.360001 97.653999 c
+100.3 98.406006 101.43583 98.985664 102.7675 99.392998 c
+104.09917 99.800339 105.57966 100.004 107.209 100.004 c
+109.87234 100.004 112.45732 99.487007 114.964 98.453003 c
+112.097 92.906998 l
+h
+130.192 92.014 m
+130.192 75 l
+121.685 75 l
+121.685 92.014 l
+118.865 92.014 l
+118.865 99.111 l
+121.685 99.111 l
+121.685 106.349 l
+130.192 106.349 l
+130.192 99.111 l
+135.033 99.111 l
+135.033 92.014 l
+130.192 92.014 l
+h
+138.229 99.111 m
+146.73599 99.111 l
+146.73599 95.163002 l
+147.64467 96.60434 148.75699 97.708832 150.073 98.476501 c
+151.38901 99.244171 152.92433 99.627998 154.679 99.627998 c
+155.4075 99.627998 l
+155.67383 99.627998 155.97932 99.596664 156.32401 99.533997 c
+156.32401 91.403 l
+155.196 91.967003 153.974 92.249001 152.658 92.249001 c
+150.68399 92.249001 149.20351 91.661507 148.21651 90.486504 c
+147.22949 89.311493 146.73599 87.596008 146.73599 85.339996 c
+146.73599 75 l
+138.229 75 l
+138.229 99.111 l
+h
+178.03799 90.556999 m
+177.756 91.747673 177.17633 92.703331 176.299 93.424004 c
+175.42166 94.144669 174.35634 94.504997 173.103 94.504997 c
+171.78699 94.504997 170.71384 94.160339 169.8835 93.471001 c
+169.05316 92.781662 168.52834 91.810341 168.30901 90.556999 c
+178.03799 90.556999 l
+h
+168.07401 85.622002 m
+168.07401 81.955978 169.79732 80.123001 173.244 80.123001 c
+175.09268 80.123001 176.487 80.874992 177.427 82.378998 c
+185.65199 82.378998 l
+183.99132 76.864304 179.83971 74.107002 173.19701 74.107002 c
+171.16032 74.107002 169.29601 74.412498 167.604 75.023499 c
+165.91199 75.634506 164.46284 76.503998 163.2565 77.632004 c
+162.05016 78.760002 161.118 80.107323 160.46001 81.674004 c
+159.802 83.240677 159.47301 84.995323 159.47301 86.938004 c
+159.47301 88.943344 159.78633 90.752823 160.41299 92.366501 c
+161.03967 93.980171 161.93266 95.350998 163.092 96.478996 c
+164.25134 97.607002 165.65349 98.476494 167.29849 99.087502 c
+168.94351 99.698502 170.79999 100.004 172.868 100.004 c
+174.90468 100.004 176.73766 99.698502 178.367 99.087502 c
+179.99634 98.476494 181.375 97.591339 182.50301 96.431999 c
+183.63101 95.272659 184.49266 93.854843 185.088 92.178497 c
+185.68333 90.502159 185.981 88.614342 185.981 86.514999 c
+185.981 85.622002 l
+168.07401 85.622002 l
+h
+208.44701 90.556999 m
+208.16499 91.747673 207.58534 92.703331 206.70799 93.424004 c
+205.83066 94.144669 204.76534 94.504997 203.51199 94.504997 c
+202.196 94.504997 201.12283 94.160339 200.2925 93.471001 c
+199.46216 92.781662 198.93733 91.810341 198.718 90.556999 c
+208.44701 90.556999 l
+h
+198.483 85.622002 m
+198.483 81.955978 200.20631 80.123001 203.653 80.123001 c
+205.50168 80.123001 206.896 80.874992 207.836 82.378998 c
+216.061 82.378998 l
+214.40033 76.864304 210.2487 74.107002 203.606 74.107002 c
+201.56932 74.107002 199.705 74.412498 198.013 75.023499 c
+196.321 75.634506 194.87184 76.503998 193.6655 77.632004 c
+192.45917 78.760002 191.52701 80.107323 190.869 81.674004 c
+190.211 83.240677 189.882 84.995323 189.882 86.938004 c
+189.882 88.943344 190.19533 90.752823 190.82201 92.366501 c
+191.44867 93.980171 192.34166 95.350998 193.50101 96.478996 c
+194.66034 97.607002 196.06248 98.476494 197.7075 99.087502 c
+199.35251 99.698502 201.20898 100.004 203.27699 100.004 c
+205.31367 100.004 207.14665 99.698502 208.776 99.087502 c
+210.40533 98.476494 211.784 97.591339 212.912 96.431999 c
+214.04001 95.272659 214.90166 93.854843 215.49699 92.178497 c
+216.09233 90.502159 216.39 88.614342 216.39 86.514999 c
+216.39 85.622002 l
+198.483 85.622002 l
+h
+231.054 92.014 m
+231.054 75 l
+222.547 75 l
+222.547 92.014 l
+219.72701 92.014 l
+219.72701 99.111 l
+222.547 99.111 l
+222.547 106.349 l
+231.054 106.349 l
+231.054 99.111 l
+235.895 99.111 l
+235.895 92.014 l
+231.054 92.014 l
+h
+255.306 92.906998 m
+253.73932 93.721672 252.20401 94.128998 250.7 94.128998 c
+249.91666 94.128998 249.28217 93.972336 248.79649 93.658997 c
+248.31084 93.345665 248.06799 92.922668 248.06799 92.389999 c
+248.06799 92.108002 248.10716 91.880836 248.1855 91.708504 c
+248.26384 91.536163 248.43617 91.371666 248.7025 91.214996 c
+248.96884 91.058334 249.3605 90.917336 249.8775 90.792 c
+250.3945 90.666664 251.07599 90.510002 251.922 90.321999 c
+254.27202 89.851997 256.02667 89.01384 257.186 87.807503 c
+258.34534 86.601158 258.92499 85.058006 258.92499 83.178001 c
+258.92499 81.76799 258.64301 80.499008 258.07901 79.371002 c
+257.51498 78.242996 256.73166 77.295174 255.729 76.527496 c
+254.72633 75.759827 253.52 75.164505 252.11 74.741501 c
+250.7 74.318497 249.149 74.107002 247.457 74.107002 c
+244.19832 74.107002 240.98668 75.031326 237.82201 76.879997 c
+240.924 82.896004 l
+243.30534 81.266655 245.56133 80.452003 247.692 80.452003 c
+248.47534 80.452003 249.11766 80.624329 249.619 80.969002 c
+250.12033 81.313667 250.371 81.752327 250.371 82.285004 c
+250.371 82.598335 250.33183 82.856834 250.25349 83.060501 c
+250.17517 83.264168 250.01067 83.452164 249.75999 83.624496 c
+249.50934 83.796837 249.14117 83.953499 248.6555 84.094498 c
+248.16983 84.235504 247.53534 84.384331 246.752 84.541 c
+244.11998 85.073669 242.27917 85.86483 241.22951 86.914497 c
+240.17982 87.964172 239.655 89.413322 239.655 91.262001 c
+239.655 92.609337 239.90567 93.823494 240.407 94.904503 c
+240.90834 95.985504 241.629 96.901993 242.569 97.653999 c
+243.509 98.406006 244.64482 98.985664 245.9765 99.392998 c
+247.30817 99.800339 248.78867 100.004 250.418 100.004 c
+253.08134 100.004 255.66632 99.487007 258.173 98.453003 c
+255.306 92.906998 l
+h
+288.44101 92.014 m
+288.44101 75 l
+279.93399 75 l
+279.93399 92.014 l
+276.879 92.014 l
+276.879 99.111 l
+279.93399 99.111 l
+279.93399 102.73 l
+279.93399 104.73534 280.12201 106.33333 280.49799 107.524 c
+280.81134 108.52667 281.31265 109.45883 282.00201 110.3205 c
+282.69135 111.18217 283.49817 111.92633 284.42249 112.553 c
+285.34683 113.17967 286.34167 113.66533 287.40701 114.01 c
+288.47235 114.35467 289.522 114.527 290.556 114.527 c
+291.27667 114.527 291.9425 114.44867 292.5535 114.292 c
+293.16449 114.13533 293.78333 113.916 294.41 113.634 c
+294.41 106.208 l
+293.84601 106.49 293.32117 106.7015 292.83551 106.8425 c
+292.34982 106.9835 291.84067 107.054 291.30801 107.054 c
+290.96332 107.054 290.61084 106.99917 290.25049 106.8895 c
+289.89017 106.77983 289.55334 106.55267 289.23999 106.208 c
+288.92667 105.86333 288.71518 105.36983 288.6055 104.7275 c
+288.49582 104.08517 288.44101 103.21568 288.44101 102.119 c
+288.44101 99.111 l
+294.41 99.111 l
+294.41 92.014 l
+288.44101 92.014 l
+h
+306.06601 87.172997 m
+306.06601 86.35833 306.21484 85.614166 306.51251 84.940498 c
+306.81018 84.26683 307.20184 83.679337 307.6875 83.178001 c
+308.17316 82.676666 308.75284 82.285004 309.42651 82.002998 c
+310.10016 81.721001 310.81299 81.580002 311.565 81.580002 c
+312.31702 81.580002 313.02982 81.721001 313.70349 82.002998 c
+314.37717 82.285004 314.95682 82.676666 315.4425 83.178001 c
+315.92816 83.679337 316.31982 84.26683 316.61749 84.940498 c
+316.91516 85.614166 317.064 86.342659 317.064 87.125999 c
+317.064 87.878006 316.91516 88.590828 316.61749 89.264503 c
+316.31982 89.938171 315.92816 90.525665 315.4425 91.027 c
+314.95682 91.528336 314.37717 91.919998 313.70349 92.202003 c
+313.02982 92.484001 312.31702 92.625 311.565 92.625 c
+310.81299 92.625 310.10016 92.484001 309.42651 92.202003 c
+308.75284 91.919998 308.17316 91.528336 307.6875 91.027 c
+307.20184 90.525665 306.81018 89.946007 306.51251 89.288002 c
+306.21484 88.629997 306.06601 87.925003 306.06601 87.172997 c
+h
+297.08899 87.266998 m
+297.08899 89.053009 297.44934 90.721489 298.17001 92.272499 c
+298.89066 93.823509 299.89334 95.17083 301.17801 96.314499 c
+302.46268 97.458176 303.99014 98.358994 305.7605 99.016998 c
+307.53085 99.675003 309.46567 100.004 311.565 100.004 c
+313.633 100.004 315.55215 99.682838 317.32251 99.040497 c
+319.09283 98.398163 320.62817 97.505173 321.9285 96.361504 c
+323.22885 95.217827 324.23932 93.854843 324.95999 92.272499 c
+325.68066 90.690155 326.04099 88.943344 326.04099 87.031998 c
+326.04099 85.120659 325.67285 83.37384 324.93649 81.791496 c
+324.20016 80.20916 323.18967 78.846176 321.905 77.702499 c
+320.62033 76.55883 319.07718 75.673668 317.27551 75.046997 c
+315.47382 74.420334 313.52335 74.107002 311.42401 74.107002 c
+309.35599 74.107002 307.44467 74.420334 305.69 75.046997 c
+303.93533 75.673668 302.42349 76.566658 301.15451 77.725998 c
+299.8855 78.885338 298.89066 80.271828 298.17001 81.885498 c
+297.44934 83.499176 297.08899 85.292992 297.08899 87.266998 c
+h
+330.92899 99.111 m
+339.436 99.111 l
+339.436 95.163002 l
+340.34467 96.60434 341.457 97.708832 342.77301 98.476501 c
+344.08902 99.244171 345.62433 99.627998 347.379 99.627998 c
+348.10751 99.627998 l
+348.37384 99.627998 348.67932 99.596664 349.02399 99.533997 c
+349.02399 91.403 l
+347.896 91.967003 346.67401 92.249001 345.358 92.249001 c
+343.384 92.249001 341.9035 91.661507 340.9165 90.486504 c
+339.9295 89.311493 339.436 87.596008 339.436 85.339996 c
+339.436 75 l
+330.92899 75 l
+330.92899 99.111 l
+h
+387.987 86.985001 m
+387.987 87.737007 387.85382 88.449829 387.58749 89.123497 c
+387.32117 89.797173 386.93735 90.384666 386.436 90.886002 c
+385.93466 91.387337 385.34717 91.786835 384.67349 92.084503 c
+383.99982 92.382172 383.27133 92.530998 382.48801 92.530998 c
+381.73599 92.530998 381.03101 92.389999 380.37299 92.108002 c
+379.715 91.825996 379.14316 91.434334 378.6575 90.932999 c
+378.17184 90.431664 377.78018 89.84417 377.48251 89.170502 c
+377.18484 88.496826 377.03601 87.784004 377.03601 87.031998 c
+377.03601 86.279999 377.177 85.575005 377.45901 84.917 c
+377.741 84.258995 378.13266 83.687172 378.634 83.2015 c
+379.13535 82.715828 379.72284 82.324165 380.39651 82.026497 c
+381.07016 81.728828 381.78299 81.580002 382.535 81.580002 c
+383.28702 81.580002 383.992 81.721001 384.64999 82.002998 c
+385.30801 82.285004 385.87982 82.676666 386.36551 83.178001 c
+386.85117 83.679337 387.24283 84.258995 387.5405 84.917 c
+387.83817 85.575005 387.987 86.264328 387.987 86.985001 c
+h
+377.271 62.967999 m
+368.76401 62.967999 l
+368.76401 99.111 l
+377.271 99.111 l
+377.271 96.431999 l
+379.08835 98.719345 381.56366 99.862999 384.69699 99.862999 c
+386.42035 99.862999 388.02615 99.526169 389.5145 98.852501 c
+391.00284 98.178833 392.29532 97.262337 393.392 96.102997 c
+394.48868 94.943665 395.3425 93.580673 395.95349 92.014 c
+396.56451 90.447327 396.87 88.771011 396.87 86.985001 c
+396.87 85.19899 396.56451 83.538338 395.95349 82.002998 c
+395.3425 80.467659 394.49649 79.120338 393.4155 77.960999 c
+392.3345 76.801659 391.05768 75.893005 389.58499 75.235001 c
+388.11234 74.576996 386.51434 74.248001 384.79099 74.248001 c
+381.78299 74.248001 379.27634 75.28199 377.271 77.349998 c
+377.271 62.967999 l
+h
+419.336 90.556999 m
+419.05399 91.747673 418.47433 92.703331 417.59698 93.424004 c
+416.71967 94.144669 415.65433 94.504997 414.401 94.504997 c
+413.08499 94.504997 412.01184 94.160339 411.18149 93.471001 c
+410.35117 92.781662 409.82632 91.810341 409.60699 90.556999 c
+419.336 90.556999 l
+h
+409.37201 85.622002 m
+409.37201 81.955978 411.09531 80.123001 414.54199 80.123001 c
+416.39069 80.123001 417.785 80.874992 418.72501 82.378998 c
+426.95001 82.378998 l
+425.28934 76.864304 421.1377 74.107002 414.495 74.107002 c
+412.45831 74.107002 410.59399 74.412498 408.90201 75.023499 c
+407.20999 75.634506 405.76083 76.503998 404.5545 77.632004 c
+403.34818 78.760002 402.41602 80.107323 401.758 81.674004 c
+401.10001 83.240677 400.771 84.995323 400.771 86.938004 c
+400.771 88.943344 401.08432 90.752823 401.711 92.366501 c
+402.33768 93.980171 403.23065 95.350998 404.39001 96.478996 c
+405.54935 97.607002 406.95148 98.476494 408.5965 99.087502 c
+410.24152 99.698502 412.09799 100.004 414.16599 100.004 c
+416.20267 100.004 418.03564 99.698502 419.66501 99.087502 c
+421.29434 98.476494 422.673 97.591339 423.80099 96.431999 c
+424.92902 95.272659 425.79065 93.854843 426.38599 92.178497 c
+426.98132 90.502159 427.27899 88.614342 427.27899 86.514999 c
+427.27899 85.622002 l
+409.37201 85.622002 l
+h
+440.15701 87.172997 m
+440.15701 86.35833 440.30582 85.614166 440.60349 84.940498 c
+440.90115 84.26683 441.29282 83.679337 441.7785 83.178001 c
+442.26416 82.676666 442.84384 82.285004 443.51749 82.002998 c
+444.19116 81.721001 444.90399 81.580002 445.65601 81.580002 c
+446.40799 81.580002 447.12082 81.721001 447.79449 82.002998 c
+448.46817 82.285004 449.04782 82.676666 449.53351 83.178001 c
+450.01917 83.679337 450.41083 84.26683 450.7085 84.940498 c
+451.00616 85.614166 451.155 86.342659 451.155 87.125999 c
+451.155 87.878006 451.00616 88.590828 450.7085 89.264503 c
+450.41083 89.938171 450.01917 90.525665 449.53351 91.027 c
+449.04782 91.528336 448.46817 91.919998 447.79449 92.202003 c
+447.12082 92.484001 446.40799 92.625 445.65601 92.625 c
+444.90399 92.625 444.19116 92.484001 443.51749 92.202003 c
+442.84384 91.919998 442.26416 91.528336 441.7785 91.027 c
+441.29282 90.525665 440.90115 89.946007 440.60349 89.288002 c
+440.30582 88.629997 440.15701 87.925003 440.15701 87.172997 c
+h
+431.17999 87.266998 m
+431.17999 89.053009 431.54034 90.721489 432.26099 92.272499 c
+432.98166 93.823509 433.98431 95.17083 435.26901 96.314499 c
+436.55368 97.458176 438.08115 98.358994 439.8515 99.016998 c
+441.62186 99.675003 443.55667 100.004 445.65601 100.004 c
+447.724 100.004 449.64316 99.682838 451.41351 99.040497 c
+453.18384 98.398163 454.71915 97.505173 456.0195 96.361504 c
+457.31985 95.217827 458.33032 93.854843 459.05099 92.272499 c
+459.77167 90.690155 460.13199 88.943344 460.13199 87.031998 c
+460.13199 85.120659 459.76382 83.37384 459.0275 81.791496 c
+458.29117 80.20916 457.28067 78.846176 455.996 77.702499 c
+454.71133 76.55883 453.16818 75.673668 451.36649 75.046997 c
+449.56482 74.420334 447.61435 74.107002 445.51501 74.107002 c
+443.44699 74.107002 441.53568 74.420334 439.78101 75.046997 c
+438.02634 75.673668 436.5145 76.566658 435.24551 77.725998 c
+433.9765 78.885338 432.98166 80.271828 432.26099 81.885498 c
+431.54034 83.499176 431.17999 85.292992 431.17999 87.266998 c
+h
+484.24301 86.985001 m
+484.24301 87.737007 484.10983 88.449829 483.84351 89.123497 c
+483.57718 89.797173 483.19333 90.384666 482.69199 90.886002 c
+482.19067 91.387337 481.60318 91.786835 480.9295 92.084503 c
+480.25583 92.382172 479.52734 92.530998 478.74399 92.530998 c
+477.992 92.530998 477.28702 92.389999 476.629 92.108002 c
+475.97101 91.825996 475.39917 91.434334 474.91351 90.932999 c
+474.42783 90.431664 474.03616 89.84417 473.73849 89.170502 c
+473.44083 88.496826 473.29199 87.784004 473.29199 87.031998 c
+473.29199 86.279999 473.43298 85.575005 473.715 84.917 c
+473.99701 84.258995 474.38867 83.687172 474.89001 83.2015 c
+475.39133 82.715828 475.97882 82.324165 476.6525 82.026497 c
+477.32617 81.728828 478.039 81.580002 478.79099 81.580002 c
+479.543 81.580002 480.24799 81.721001 480.90601 82.002998 c
+481.564 82.285004 482.13583 82.676666 482.62149 83.178001 c
+483.10718 83.679337 483.49884 84.258995 483.79651 84.917 c
+484.09418 85.575005 484.24301 86.264328 484.24301 86.985001 c
+h
+473.52701 62.967999 m
+465.01999 62.967999 l
+465.01999 99.111 l
+473.52701 99.111 l
+473.52701 96.431999 l
+475.34433 98.719345 477.81964 99.862999 480.953 99.862999 c
+482.67633 99.862999 484.28217 99.526169 485.77051 98.852501 c
+487.25885 98.178833 488.55133 97.262337 489.64801 96.102997 c
+490.74466 94.943665 491.59851 93.580673 492.2095 92.014 c
+492.8205 90.447327 493.12601 88.771011 493.12601 86.985001 c
+493.12601 85.19899 492.8205 83.538338 492.2095 82.002998 c
+491.59851 80.467659 490.7525 79.120338 489.67151 77.960999 c
+488.59048 76.801659 487.31366 75.893005 485.841 75.235001 c
+484.36832 74.576996 482.77036 74.248001 481.047 74.248001 c
+478.03897 74.248001 475.53235 75.28199 473.52701 77.349998 c
+473.52701 62.967999 l
+h
+506.474 114.01 m
+506.474 75 l
+497.96701 75 l
+497.96701 114.01 l
+506.474 114.01 l
+h
+529.927 90.556999 m
+529.64502 91.747673 529.06531 92.703331 528.18799 93.424004 c
+527.31067 94.144669 526.24536 94.504997 524.992 94.504997 c
+523.67596 94.504997 522.60284 94.160339 521.77252 93.471001 c
+520.94214 92.781662 520.41736 91.810341 520.198 90.556999 c
+529.927 90.556999 l
+h
+519.96301 85.622002 m
+519.96301 81.955978 521.68634 80.123001 525.133 80.123001 c
+526.98169 80.123001 528.37598 80.874992 529.31598 82.378998 c
+537.54102 82.378998 l
+535.88031 76.864304 531.7287 74.107002 525.086 74.107002 c
+523.04932 74.107002 521.185 74.412498 519.49298 75.023499 c
+517.80096 75.634506 516.35187 76.503998 515.14551 77.632004 c
+513.93915 78.760002 513.00702 80.107323 512.349 81.674004 c
+511.69101 83.240677 511.362 84.995323 511.362 86.938004 c
+511.362 88.943344 511.67532 90.752823 512.302 92.366501 c
+512.92865 93.980171 513.82166 95.350998 514.98102 96.478996 c
+516.14032 97.607002 517.54248 98.476494 519.1875 99.087502 c
+520.83252 99.698502 522.68896 100.004 524.75702 100.004 c
+526.7937 100.004 528.62665 99.698502 530.25598 99.087502 c
+531.88531 98.476494 533.26398 97.591339 534.39203 96.431999 c
+535.52002 95.272659 536.38165 93.854843 536.97699 92.178497 c
+537.57233 90.502159 537.87 88.614342 537.87 86.514999 c
+537.87 85.622002 l
+519.96301 85.622002 l
+h
+W*
+0 0 612 792 rc
+89.612999 119.527 m
+542.87 119.527 l
+542.87 57.967999 l
+89.612999 57.967999 l
+h
+f
+ep
+end
+%%Trailer
+%%EOF
