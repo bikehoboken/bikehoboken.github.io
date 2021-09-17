@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <title>Bike Hoboken styleguide</title>
         <style>
             * {
                 box-sizing: border-box;
@@ -18,8 +20,14 @@
                 padding: 1rem;
             }
             .Asset {
+                border-bottom: 1px solid #eee;
                 display: block;
+                padding-bottom: 3rem;
                 margin-bottom: 3rem;
+            }
+            .Asset ._Label {
+                padding: 1rem;
+                display: block;
             }
             .Asset img {
                 display: block;
@@ -48,7 +56,7 @@
                 <span class="_ImageWrapper">
                     <img style="width: 16px" src="./assets/H_Mark-purple--16@2x.png">
                 </span>
-                <span>H Mark - purple/white - 16px @ 2x - png</span>
+                <span class="_Label">H Mark - purple/white - 16px @ 2x - png</span>
             </a>
         </div>
         <div class="Asset">
@@ -56,7 +64,7 @@
                 <span class="_ImageWrapper">
                     <img style="width: 48px" src="./assets/H_Mark-purple--48@5x.png">
                 </span>
-                <span>H Mark - purple/white - 48px @ 5x - png</span>
+                <span class="_Label">H Mark - purple/white - 48px @ 5x - png</span>
             </a>
         </div>
         <div class="Asset">
@@ -64,7 +72,7 @@
                 <span class="_ImageWrapper">
                     <img style="width: 48px" src="./assets/H_Mark-purple--48@10x.jpg">
                 </span>
-                <span>H Mark - purple/white - 48px @ 10x - jpg</span>
+                <span class="_Label">H Mark - purple/white - 48px @ 10x - jpg</span>
             </a>
         </div>
         <div class="Asset">
@@ -72,7 +80,7 @@
                 <span class="_ImageWrapper">
                     <img style="width: 48px" src="./assets/H_Mark-purple-on-transparent--48@5x.png">
                 </span>
-                <span>H Mark - purple/transparent - 48px @ 5x - png</span>
+                <span class="_Label">H Mark - purple/transparent - 48px @ 5x - png</span>
             </a>
         </div>
         <div class="Asset">
@@ -80,7 +88,7 @@
                 <span class="_ImageWrapper">
                     <img style="width: 700px" src="./assets/Logotype-purple.svg">
                 </span>
-                <span>Logotype - purple/transparent - svg</span>
+                <span class="_Label">Logotype - purple/transparent - svg</span>
             </a>
         </div>
         <div class="Asset">
@@ -88,7 +96,7 @@
                 <span class="_ImageWrapper">
                     <img style="width: 700px" src="./assets/Logotype@2x.png">
                 </span>
-                <span>Logotype - purple/transparent - 700px @ 2x - png</span>
+                <span class="_Label">Logotype - purple/transparent - 700px @ 2x - png</span>
             </a>
         </div>
 
@@ -97,56 +105,81 @@
             <span class="_ImageWrapper">
                 <img style="width: 700px" src="./assets/tshirt-front-on-transparent@4x.png">
             </span>
-            <span>T-Shirt Front - white/transparent</span>
-            <a href="./assets/tshirt-front.eps" download>
-                tshirt-front.eps
-            </a>
-            <a href="./assets/tshirt-front-on-transparent@10x.png" download>
-                tshirt-front@10x.png
-            </a>
+            <span class="_Label">T-Shirt Front - white/transparent</span>
+            <ul>
+                <li>
+                    <a href="./assets/tshirt-front.eps" download>
+                        tshirt-front.eps
+                    </a>
+                </li>
+                <li>
+                    <a href="./assets/tshirt-front-on-transparent@10x.png" download>
+                        tshirt-front@10x.png
+                    </a>
+                </li>
+            </ul>
         </div>
 
         <div class="Asset">
             <span class="_ImageWrapper">
                 <img style="width: 700px" src="./assets/tshirt-back-on-transparent@4x.png">
             </span>
-            <span>T-Shirt Back - white/transparent</span>
-            <a href="./assets/tshirt-back.eps" download>
-                tshirt-back.eps
-            </a>
-            <a href="./assets/tshirt-back-on-transparent@10x.png" download>
-                tshirt-back@10x.png
-            </a>
+            <span class="_Label">T-Shirt Back - white/transparent</span>
+            <ul>
+                <li>
+                    <a href="./assets/tshirt-back.eps" download>
+                        tshirt-back.eps
+                    </a>
+                </li>
+                <li>
+                    <a href="./assets/tshirt-back-on-transparent@10x.png" download>
+                        tshirt-back@10x.png
+                    </a>
+                </li>
+            </ul>
+            
         </div>
 
         <div class="Asset">
             <span class="_ImageWrapper">
                 <img style="width: 700px" src="./assets/tshirt-front-on-purple@10x.png">
             </span>
-            <span>T-Shirt Front - white/purple</span>
-            <a href="./assets/tshirt-front-on-purple@10x.png" download>
-                tshirt-front-on-purple@10x.png
-            </a>
+            <span class="_Label">T-Shirt Front - white/purple</span>
+            <ul>
+                <li>
+                    <a href="./assets/tshirt-front-on-purple@10x.png" download>
+                        tshirt-front-on-purple@10x.png
+                    </a>
+                </li>
+            </ul>
         </div>
 
         <div class="Asset">
             <span class="_ImageWrapper">
                 <img style="width: 700px" src="./assets/tshirt-with-tagline@10x.png">
             </span>
-            <span>T-Shirt With Tagline - white/purple</span>
-            <a href="./assets/tshirt-with-tagline@10x.png" download>
-                tshirt-with-tagline@10x.png
-            </a>
+            <span class="_Label">T-Shirt With Tagline - white/purple</span>
+            <ul>
+                <li>
+                    <a href="./assets/tshirt-with-tagline@10x.png" download>
+                        tshirt-with-tagline@10x.png
+                    </a>
+                </li>
+            </ul>
         </div>
 
         <div class="Asset">
             <span class="_ImageWrapper">
                 <img style="width: 700px" src="./assets/h-kom-pattern@8x.png">
             </span>
-            <span>KOM Jersey pattern</span>
-            <a href="./assets/h-kom-pattern@8x.png" download>
-                h-kom-pattern@8x.png
-            </a>
+            <span class="_Label">KOM Jersey pattern</span>
+            <ul>
+                <li>
+                    <a href="./assets/h-kom-pattern@8x.png" download>
+                        h-kom-pattern@8x.png
+                    </a>
+                </li>
+            </ul>
         </div>
     </body>
 </html>
